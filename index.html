@@ -9,19 +9,20 @@
   <style>
     body {
       font-family: 'Ubuntu', sans-serif;
-      background-color:#231955;
+      background-color: #231955;
     }
     .pricing-container{
       display: flex;
       justify-content: center;
+      height: 100vh;
+      align-items: center;
     }
     .pricing-plan{
-      border-radius:1rem;
       border: 2px solid navy;
+      border-radius: 1rem;
       padding: 10px;
       margin: 10px;
       background-color: #FFE5B4;
-      flex-shrink:0;
     }
     .pricing-plan > .plan-title,.plan-price{
       text-align: center;
@@ -33,29 +34,31 @@
       position: relative;
       left: 25%;
       background-color: whitesmoke;
-      border: 1px solid  black;
+      border: 1px solid  #000000;
     }
     .plan-features > li{
       list-style: none;
     }
 
     /* Hint: What can you do with a media query and flexbox? */
-    @media (max-width: 1050px) {
+    @media (max-width: 1200px) {
       body {
       font-family: 'Ubuntu', sans-serif;
       background-color: #231955;
     }
     .pricing-container{
+      display: flex;
       flex-direction: column;
       align-items: center;
     }
     .pricing-plan{
       
+      border-radius: 1rem;
       border: 2px solid navy;
       padding: 10px;
       margin: 10px;
       background-color: #FFE5B4;
-      flex-shrink:0;
+      
     }
     .pricing-plan > .plan-title,.plan-price{
       text-align: center;
@@ -67,9 +70,7 @@
       position: relative;
       left: 25%;
       background-color: whitesmoke;
-      border: 1px solid  black;
-    }
-      
+      border: 1px solid  #000000;
     }
     @media (max-width: 330px) {
       body {
@@ -80,14 +81,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      
     }
     .pricing-plan{
+      
       border-radius: 1rem;
       border: 2px solid navy;
       padding: 10px;
       margin: 10px;
       background-color: #FFE5B4;
-      flex-shrink:0;
+      flex-shrink: 1;
+      
     }
     .pricing-plan > .plan-title,.plan-price{
       text-align: center;
@@ -104,6 +108,7 @@
       
     }  
     }
+    
   </style>
 </head>
 
